@@ -40,6 +40,13 @@ The application integrates with a **PostgreSQL** database and includes **Swagger
 
 ## 📥 Installation & Setup  
 
+| Step | Description |
+|------|------------|
+| **1. Clone the Repository** | Clone the project from GitHub and navigate into the directory. |
+| **2. Configure the Database** | Ensure PostgreSQL is running and update `application.yml` with your database credentials. |
+| **3. Build and Run the Application** | Use Gradle to build and start the application. |
+| **4. Access the API** | Open Swagger UI or use Postman to test the API endpoints. |
+
 ### 🔹 1. Clone the Repository  
 ```bash
 git clone https://github.com/zntPEGASUS77K/TEACHSPACETOOLS.git
