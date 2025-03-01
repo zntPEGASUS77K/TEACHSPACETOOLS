@@ -102,10 +102,4 @@ Run unit and integration tests with:
 ## 📜 License
 📄 This project is licensed under the MIT License.
 
-🔥 Ready to optimize your educational management with Teachspace Tools? 🚀
-
-## How to Use It?
-1. Copy the above content.
-2. Create a new file in your project root directory and name it `README.md`.
-3. Paste the content into `README.md` and save it.
-4. It will be properly formatted when viewed on GitHub or any markdown-supported platform.
+🔥 Enjoy this application 🚀
