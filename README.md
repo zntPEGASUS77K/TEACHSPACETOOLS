@@ -1,46 +1,46 @@
 # 📚 Teachspace Tools  
 
-Teachspace Tools est une application **Spring Boot** conçue pour gérer les professeurs, les salles et leurs plannings d'occupation au sein d'un établissement éducatif. Elle expose une **API REST** permettant d'effectuer des opérations CRUD sur les entités suivantes :  
-👨‍🏫 **Professeurs (Prof)** | 🏫 **Salles (Salle)** | 📆 **Occupations (Occuper)**  
-L'application utilise une base de données **PostgreSQL** et intègre **Swagger UI** pour la documentation API.
+Teachspace Tools is a **Spring Boot** application designed to manage professors, rooms, and their scheduling in an educational institution. It provides a **RESTful API** to perform CRUD operations on:  
+👨‍🏫 **Professors (Prof)** | 🏫 **Rooms (Salle)** | 📆 **Occupancy (Occuper)**  
+The application integrates with a **PostgreSQL** database and includes **Swagger UI** for API documentation.
 
 ---
 
-## ✨ Fonctionnalités  
+## ✨ Features  
 
-✅ **Gestion des Professeurs** : Ajout, mise à jour, suppression et consultation des professeurs 👨‍🏫  
-✅ **Gestion des Salles** : Administration des salles et de leurs désignations 🏫  
-✅ **Planification d'Occupation** : Attribution des salles aux professeurs pour une date donnée 📅  
-✅ **Documentation API** : Interface interactive via Swagger UI 📜  
-✅ **Gestion des Erreurs** : Gestion robuste des exceptions et des contraintes de base de données 🚦  
-
----
-
-## 🛠️ Stack Technologique  
-
-🔹 **Backend** : Spring Boot 3.2.2, Spring Data JPA  
-🔹 **Langage** : Java 21 ☕  
-🔹 **Base de Données** : PostgreSQL 🐘  
-🔹 **Documentation API** : Springdoc OpenAPI (Swagger UI) 📄  
-🔹 **Build Tool** : Gradle 📦  
-🔹 **Containerisation** : Docker Compose pour PostgreSQL 🐳  
-🔹 **Tests** : JUnit 5 avec MockMvc ✅  
+✅ **Professor Management**: Create, update, delete, and retrieve professors 👨‍🏫  
+✅ **Room Management**: Handle room designations with CRUD operations 🏫  
+✅ **Occupancy Scheduling**: Assign rooms to professors on specific dates 📅  
+✅ **API Documentation**: Interactive Swagger UI 📜  
+✅ **Error Handling**: Comprehensive exception handling and database constraints 🚦  
 
 ---
 
-## 🚀 Prérequis  
+## 🛠️ Tech Stack  
 
-🔹 **Java 21** installé 📌  
-🔹 **Gradle** installé 🛠️  
-🔹 **PostgreSQL** configuré 🐘  
-🔹 **Docker** (optionnel, pour exécuter la base de données avec Docker Compose) 🐳  
-🔹 **Git** installé pour cloner le projet 🖥️  
+🔹 **Backend**: Spring Boot 3.2.2, Spring Data JPA  
+🔹 **Language**: Java 21 ☕  
+🔹 **Database**: PostgreSQL 🐘  
+🔹 **API Documentation**: Springdoc OpenAPI (Swagger UI) 📄  
+🔹 **Build Tool**: Gradle 📦  
+🔹 **Containerization**: Docker Compose for PostgreSQL 🐳  
+🔹 **Testing**: JUnit 5 with MockMvc ✅  
 
 ---
 
-## 📥 Installation et Configuration  
+## 🚀 Prerequisites  
 
-### 🔹 1. Cloner le projet  
+🔹 **Java 21** installed 📌  
+🔹 **Gradle** installed 🛠️  
+🔹 **PostgreSQL** configured 🐘  
+🔹 **Docker** (optional, for running the database via Docker Compose) 🐳  
+🔹 **Git** installed to clone the project 🖥️  
+
+---
+
+## 📥 Installation & Setup  
+
+### 🔹 1. Clone the Repository  
 ```bash
 git clone https://github.com/zntPEGASUS77K/TEACHSPACETOOLS.git
 cd TEACHSPACETOOLS
