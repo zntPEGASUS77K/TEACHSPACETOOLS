@@ -51,3 +51,61 @@ The application integrates with a **PostgreSQL** database and includes **Swagger
 ```bash
 git clone https://github.com/zntPEGASUS77K/TEACHSPACETOOLS.git
 cd TEACHSPACETOOLS
+```
+### 🔹 2. Configure the Database
+If using local PostgreSQL, ensure your application.yml contains the correct settings:
+```yaml
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5433/teachspace
+    username: masterpiece
+    password: zntPEGASUS77K
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+```
+
+If using Docker, start the PostgreSQL container with:
+```bash
+docker-compose up -d
+```
+
+### 🔹 3. Run the Application
+```bash
+./gradlew bootRun
+```
+The application will be available at:
+- 📌 Swagger UI: http://localhost:8085/swagger-ui.html
+
+### 🧪 Testing
+Run unit and integration tests with:
+```bash
+./gradlew test
+```
+
+## 📌 API Endpoints
+| Method | Endpoint             | Description            |
+|--------|-----------------------|------------------------|
+| GET    | /api/v1/profs         | Retrieve all professors|
+| POST   | /api/v1/profs         | Add a new professor    |
+| PUT    | /api/v1/profs/{id}    | Update a professor     |
+| DELETE | /api/v1/profs/{id}    | Delete a professor     |
+| GET    | /api/v1/salles        | Retrieve all rooms     |
+| POST   | /api/v1/salles        | Add a new room         |
+| GET    | /api/v1/occuper       | Get room assignments   |
+
+## 📜 License
+📄 This project is licensed under the MIT License.
+
+🔥 Ready to optimize your educational management with Teachspace Tools? 🚀
+
+## How to Use It?
+1. Copy the above content.
+2. Create a new file in your project root directory and name it `README.md`.
+3. Paste the content into `README.md` and save it.
+4. It will be properly formatted when viewed on GitHub or any markdown-supported platform.
