@@ -57,9 +57,9 @@ If using local PostgreSQL, ensure your application.yml contains the correct sett
 ```yaml
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5433/teachspace
-    username: masterpiece
-    password: zntPEGASUS77K
+    url: jdbc:postgresql://localhost:5433/your_database
+    username: your_username
+    password: your_password
     driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:
