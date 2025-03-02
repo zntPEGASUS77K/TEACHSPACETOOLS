@@ -1,4 +1,4 @@
-# 📚 Teachspace Tools  
+# 📚 TEACHSPACETOOLS  
 
 Teachspace Tools is a **Spring Boot** application designed to manage professors, rooms, and their scheduling in an educational institution. It provides a **RESTful API** to perform CRUD operations on:  
 👨‍🏫 **Professors (Prof)** | 🏫 **Rooms (Salle)** | 📆 **Occupancy (Occuper)**  
@@ -6,7 +6,7 @@ The application integrates with a **PostgreSQL** database and includes **Swagger
 
 ---
 
-## ✨ Features  
+## ✨ FEATURES  
 
 ✅ **Professor Management**: Create, update, delete, and retrieve professors 👨‍🏫  
 ✅ **Room Management**: Handle room designations with CRUD operations 🏫  
@@ -16,7 +16,7 @@ The application integrates with a **PostgreSQL** database and includes **Swagger
 
 ---
 
-## 🛠️ Tech Stack  
+## 🛠️ TECH STACK  
 
 🔹 **Backend**: Spring Boot 3.2.2, Spring Data JPA  
 🔹 **Language**: Java 21 ☕  
@@ -28,7 +28,7 @@ The application integrates with a **PostgreSQL** database and includes **Swagger
 
 ---
 
-## 🚀 Prerequisites  
+## 🚀 PREREQUISITES  
 
 🔹 **Java 21** installed 📌  
 🔹 **Gradle** installed 🛠️  
@@ -38,7 +38,7 @@ The application integrates with a **PostgreSQL** database and includes **Swagger
 
 ---
 
-## 📥 Installation & Setup  
+## 📥 INSTALLATION & SETUP  
 
 | Step | Description |
 |------|------------|
@@ -88,7 +88,7 @@ Run unit and integration tests with:
 ./gradlew test
 ```
 
-## 📌 API Endpoints
+## 📌 API ENDPOINTS
 | Method | Endpoint             | Description            |
 |--------|-----------------------|------------------------|
 | GET    | /api/v1/profs         | Retrieve all professors|
@@ -99,7 +99,7 @@ Run unit and integration tests with:
 | POST   | /api/v1/salles        | Add a new room         |
 | GET    | /api/v1/occuper       | Get room assignments   |
 
-## 📜 License
+## 📜 LICENCE
 📄 This project is licensed under the MIT License.
 
 🔥 Enjoy this application 🚀
