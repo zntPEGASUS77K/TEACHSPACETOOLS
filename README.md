@@ -18,7 +18,7 @@ The application integrates with a **PostgreSQL** database and includes **Swagger
 
 ## 🛠️ TECH STACK  
 
-🔹 **Backend**: Spring Boot 3.2.2, Spring Data JPA  
+🔹 **Backend**: Spring Boot
 🔹 **Language**: Java 21 ☕  
 🔹 **Database**: PostgreSQL 🐘  
 🔹 **API Documentation**: Springdoc OpenAPI (Swagger UI) 📄  
