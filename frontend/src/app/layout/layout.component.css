@@ -1,0 +1,28 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    position: relative; /* Ensure proper stacking context */
+  }
+  
+  .main-content {
+    display: flex;
+    flex: 1;
+  }
+  
+  .sidebar {
+    width: 250px;
+    background-color: #f4f4f4;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 64px; /* Start below the header */
+    z-index: 90; /* Lower than the header’s z-index */
+  }
+  
+  .content {
+    margin-left: 250px; /* Décalage pour laisser la place au sidebar */
+    padding: 20px;
+    flex: 1;
+    margin-top: 64px; /* Account for the header height */
+  }
