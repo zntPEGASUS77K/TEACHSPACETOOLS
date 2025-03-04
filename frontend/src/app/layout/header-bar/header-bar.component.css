@@ -1,17 +1,17 @@
 .header {
-  background-color: #0f0070; 
+  background-color: #0f0070;
   color: white;
   padding: 1rem;
   display: flex;
   align-items: center;
-  height: 40x; 
+  height: 40px;
   font-size: 10px;
   font-weight: bold;
-  position: fixed; 
+  position: fixed;
   top: 0;
   left: 0;
-  width: 100%; 
-  z-index: 100; 
+  width: 100%;
+  z-index: 100;
 }
 
 .header-title {
