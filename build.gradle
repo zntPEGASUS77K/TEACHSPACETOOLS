@@ -55,17 +55,3 @@ node {
     npmVersion = '10.2.3'
     download = true
 }
-
-task buildFrontend(type: NpmTask) {
-    group = 'build'
-    args = ['run', 'build']
-    workingDir = file("${rootDir}/frontend")
-    dependsOn npmInstall
-}
-
-task serveFrontend(type: NpmTask) {
-    group = 'application'
-    args = ['run', 'start']
-    workingDir = file("${rootDir}/frontend")
-    dependsOn npmInstall
-}
