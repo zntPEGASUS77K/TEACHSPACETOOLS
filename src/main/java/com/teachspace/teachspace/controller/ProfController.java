@@ -10,6 +10,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/${api.version}/profs")
+@CrossOrigin(origins = "http://localhost:4200")
 @Tag(name = "Prof", description = "API to manage professors")
 public class ProfController {
     private final ProfService profService;
