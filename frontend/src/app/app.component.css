@@ -1,3 +1,8 @@
+*{
+  margin: 0;
+  font-family: 'Poppins', sans-serif !important;
+}
+
 :host {
   display: flex;
   flex-direction: column;

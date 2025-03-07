@@ -60,7 +60,9 @@ public class SalleService {
 
     public Salle toEntity(SalleDTO dto) {
         Salle salle = new Salle();
-        salle.setCodeSal(dto.getCodeSal());
+        if (dto.getCodeSal() != null) {
+            salle.setCodeSal(dto.getCodeSal());
+        }
         salle.setDesignation(dto.getDesignation());
         return salle;
     }

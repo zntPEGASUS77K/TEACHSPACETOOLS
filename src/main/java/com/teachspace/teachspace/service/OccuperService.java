@@ -70,7 +70,9 @@ public class OccuperService {
 
     private Occuper toEntity(OccuperDTO dto) {
         Occuper occuper = new Occuper();
-        occuper.setId(dto.getId());
+        if (dto.getId() != null) {
+            occuper.setId(dto.getId());
+        }
         Prof prof = profService.toEntity(profService.findById(dto.getCodeProf()));
         Salle salle = salleService.toEntity(salleService.findById(dto.getCodeSal()));
         occuper.setProf(prof);

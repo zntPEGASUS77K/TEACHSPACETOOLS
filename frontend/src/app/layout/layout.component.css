@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     height: 100vh;
-    position: relative; /* Ensure proper stacking context */
+    position: relative; 
   }
   
   .main-content {
@@ -16,13 +16,13 @@
     height: 100vh;
     position: fixed;
     left: 0;
-    top: 64px; /* Start below the header */
-    z-index: 90; /* Lower than the header’s z-index */
+    top: 64px; 
+    z-index: 90;
   }
   
   .content {
-    margin-left: 250px; /* Décalage pour laisser la place au sidebar */
+    margin-left: 250px; 
     padding: 20px;
     flex: 1;
-    margin-top: 64px; /* Account for the header height */
+    margin-top: 64px;
   }

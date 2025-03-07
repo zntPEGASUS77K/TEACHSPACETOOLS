@@ -1,0 +1,19 @@
+<h2 mat-dialog-title>ADD NEW OCCUPANCY</h2>
+<mat-dialog-content>
+  <mat-form-field appearance="fill">
+    <mat-label>CODE PROFESSORS</mat-label>
+    <input matInput type="number" [(ngModel)]="occupancy.codeProf" required>
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>CODE ROOMS</mat-label>
+    <input matInput type="number" [(ngModel)]="occupancy.codeSal" required>
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>Date (YYYY-MM-DD)</mat-label>
+    <input matInput [(ngModel)]="occupancy.date" required>
+  </mat-form-field>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-button (click)="cancel()">CANCEL</button>
+  <button mat-button (click)="save()" [disabled]="!occupancy.codeProf || !occupancy.codeSal || !occupancy.date">ADD</button>
+</mat-dialog-actions>
