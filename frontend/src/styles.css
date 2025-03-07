@@ -1,4 +1,22 @@
-/* You can add global styles to this file, and also import other style files */
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Poppins', sans-serif !important; 
+  }
+  
+  .mat-typography, mat-card, mat-table, mat-form-field, mat-label, mat-header-cell, mat-cell, button {
+    font-family: 'Poppins', sans-serif !important;
+  }
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+  .custom-snackbar {
+    font-family: 'Poppins', sans-serif !important;
+    color: white;
+    text-align: center;
+    border-radius: 8px;
+    padding: 10px 20px;
+  }
+  
+  .custom-snackbar .mat-snack-bar-action {
+    color: white;
+    font-family: 'Poppins', sans-serif !important;
+  }
