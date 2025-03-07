@@ -19,8 +19,8 @@ import { CommonModule } from '@angular/common';
 })
 export class SideBarComponent {
   menuItems = [
-    { label: 'Professors', icon: 'person', route: '/profs' },
-    { label: 'Rooms', icon: 'room', route: '/salles' },
-    { label: 'Occupancy', icon: 'event', route: '/occuper' }
+    { label: 'Professors', icon: 'school', route: '/profs' },
+    { label: 'Rooms', icon: 'meeting_room', route: '/salles' },
+    { label: 'Occupancy', icon: 'schedule', route: '/occuper' }
   ];
 }

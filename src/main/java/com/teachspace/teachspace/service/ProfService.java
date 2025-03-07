@@ -68,7 +68,9 @@ public class ProfService {
 
     public Prof toEntity(ProfDTO dto) {
         Prof prof = new Prof();
-        prof.setCodeProf(dto.getCodeProf());
+        if (dto.getCodeProf() != null) {
+            prof.setCodeProf(dto.getCodeProf());
+        }
         prof.setNom(dto.getNom());
         prof.setPrenom(dto.getPrenom());
         prof.setGrade(dto.getGrade());

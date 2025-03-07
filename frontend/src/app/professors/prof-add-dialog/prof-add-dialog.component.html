@@ -1,0 +1,19 @@
+<h2 mat-dialog-title>ADD NEW PROFESSORS</h2>
+<mat-dialog-content>
+  <mat-form-field appearance="fill">
+    <mat-label>NAME</mat-label>
+    <input matInput [(ngModel)]="prof.nom" required>
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>LAST NAME</mat-label>
+    <input matInput [(ngModel)]="prof.prenom" required>
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>RANK</mat-label>
+    <input matInput [(ngModel)]="prof.grade" required>
+  </mat-form-field>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-button (click)="cancel()">CANCEL</button>
+  <button mat-button (click)="save()" [disabled]="!prof.nom || !prof.prenom || !prof.grade">ADD</button>
+</mat-dialog-actions>
