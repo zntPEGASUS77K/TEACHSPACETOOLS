@@ -6,6 +6,7 @@ import com.teachspace.teachspace.model.ProfDTO;
 import com.teachspace.teachspace.repository.ProfRepository;
 import org.springframework.stereotype.Service;
 
+import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -19,6 +20,7 @@ public class ProfService {
 
     public List<ProfDTO> findAll() {
         return profRepository.findAll().stream()
+                .sorted(Comparator.comparing(Prof::getCodeProf))
                 .map(this::toDTO)
                 .collect(Collectors.toList());
     }
@@ -30,7 +32,7 @@ public class ProfService {
     }
 
     public List<ProfDTO> findByNom(String nom) {
-        return profRepository.findByNom(nom).stream()
+        return profRepository.findByNomContainingIgnoreCase(nom).stream()
                 .map(this::toDTO)
                 .collect(Collectors.toList());
     }

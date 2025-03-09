@@ -1,0 +1,11 @@
+<h2 mat-dialog-title>UPDATE ROOM</h2>
+<mat-dialog-content>
+  <mat-form-field appearance="fill">
+    <mat-label>DESCRIPTION</mat-label>
+    <input matInput [(ngModel)]="room.designation" required>
+  </mat-form-field>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-button (click)="cancel()">CANCEL</button>
+  <button mat-button (click)="save()" [disabled]="!room.designation">UPDATE</button>
+</mat-dialog-actions>

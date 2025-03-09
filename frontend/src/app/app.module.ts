@@ -24,6 +24,8 @@ import { ProfUpdateDialogComponent } from './professors/prof-update-dialog/prof-
 import { ProfDeleteDialogComponent } from './professors/prof-delete-dialog/prof-delete-dialog.component';
 import { RoomAddDialogComponent } from './rooms/room-add-dialog/room-add-dialog.component';
 import { OccupancyAddDialogComponent } from './occupancy/occupancy-add-dialog/occupancy-add-dialog.component';
+import { RoomUpdateDialogComponent } from './rooms/room-update-dialog/room-update-dialog.component';
+import { RoomDeleteDialogComponent } from './rooms/room-delete-dialog/room-delete-dialog.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +37,9 @@ import { OccupancyAddDialogComponent } from './occupancy/occupancy-add-dialog/oc
     ProfUpdateDialogComponent,
     ProfDeleteDialogComponent,
     RoomAddDialogComponent,
-    OccupancyAddDialogComponent
+    OccupancyAddDialogComponent,
+    RoomUpdateDialogComponent,
+    RoomDeleteDialogComponent
   ],
   imports: [
     BrowserModule,

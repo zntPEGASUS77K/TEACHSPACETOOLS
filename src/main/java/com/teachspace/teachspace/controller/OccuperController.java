@@ -10,6 +10,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/${api.version}/occuper")
+@CrossOrigin(origins = "http://localhost:4200")
 @Tag(name = "Occuper", description = "API to manage room by teachers")
 public class OccuperController {
     private final OccuperService occuperService;
