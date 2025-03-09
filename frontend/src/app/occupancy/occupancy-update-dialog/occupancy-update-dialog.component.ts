@@ -4,19 +4,20 @@ import { HttpClient } from '@angular/common/http';
 import { config } from '../../config';
 
 @Component({
-  selector: 'app-occupancy-add-dialog',
-  templateUrl: './occupancy-add-dialog.component.html',
-  styleUrls: ['./occupancy-add-dialog.component.css'],
+  selector: 'app-occupancy-update-dialog',
+  templateUrl: './occupancy-update-dialog.component.html',
+  styleUrls: ['./occupancy-update-dialog.component.css'],
   standalone: false
 })
-export class OccupancyAddDialogComponent {
-  occupancy = { codeProf: null, codeSal: null, date: new Date().toISOString().split('T')[0] };
+export class OccupancyUpdateDialogComponent {
+  occupancy: { id: number; codeProf: number; codeSal: number; date: string };
 
   constructor(
-    public dialogRef: MatDialogRef<OccupancyAddDialogComponent>,
-    @Inject(MAT_DIALOG_DATA) public data: { profs: any[], salles: any[] },
+    public dialogRef: MatDialogRef<OccupancyUpdateDialogComponent>,
+    @Inject(MAT_DIALOG_DATA) public data: { id: number; codeProf: number; codeSal: number; date: string; profs: any[]; salles: any[] },
     private http: HttpClient
   ) {
+    this.occupancy = { ...data, date: data.date || new Date().toISOString().split('T')[0] };
     if (!data.profs.length) {
       this.http.get<any[]>(`http://localhost:8085/api/${config.apiVersion}/profs`).subscribe(profs => {
         this.data.profs = profs;

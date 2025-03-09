@@ -37,8 +37,8 @@ mat-card-header {
 mat-card-title {
   font-family: 'Poppins', sans-serif !important;
   text-align: center;
-  font-size: 24px;
   font-weight: 700;
+  font-size: 24px;
 }
 
 th {
@@ -56,18 +56,7 @@ td {
   color: #000000;
 }
 
-.header-actions {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.search-field {
-  width: 300px;
+mat-paginator {
   font-family: 'Poppins', sans-serif !important;
   margin-top: 25px;
-}
-
-mat-icon {
-  cursor: pointer;
 }
