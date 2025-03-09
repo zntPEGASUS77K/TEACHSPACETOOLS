@@ -13,7 +13,7 @@ interface OccuperDTO {
   id: number;
   codeProf: number;
   codeSal: number;
-  date: string; // Explicitement une chaîne au format "yyyy-MM-dd"
+  date: string;
 }
 
 @Component({
@@ -45,10 +45,9 @@ export class OccupancyComponent implements OnInit {
   loadOccupancy(): void {
     this.http.get<OccuperDTO[]>(`http://localhost:8085/api/${config.apiVersion}/occuper`).subscribe({
       next: (data) => {
-        // Assurer que les dates sont au format "yyyy-MM-dd"
         const formattedData = data.map(item => ({
           ...item,
-          date: new Date(item.date).toISOString().split('T')[0] // Normaliser la date
+          date: new Date(item.date).toISOString().split('T')[0]
         }));
         this.dataSource.data = formattedData;
       },
