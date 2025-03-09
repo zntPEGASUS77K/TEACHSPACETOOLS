@@ -1,23 +1,23 @@
-<h2 mat-dialog-title>ADD NEW OCCUPANCY</h2>
+<h2 mat-dialog-title>UPDATE OCCUPANCY</h2>
 <mat-dialog-content>
   <mat-form-field appearance="fill">
     <mat-label>CODE PROFESSOR</mat-label>
-    <mat-select [(ngModel)]="occupancy.codeProf" required>
-      <mat-option *ngFor="let prof of data.profs" [value]="prof.codeProf">
+    <mat-select [(ngModel)]="occupancy.codeProf" [disabled]="true" required>
+      <mat-option *ngFor="let prof of data.profs" [value]="prof.codeProf" class="poppins-option">
         {{ prof.nom }} {{ prof.prenom }} ({{ prof.codeProf }})
       </mat-option>
     </mat-select>
   </mat-form-field>
   <mat-form-field appearance="fill">
     <mat-label>CODE ROOM</mat-label>
-    <mat-select [(ngModel)]="occupancy.codeSal" required>
-      <mat-option *ngFor="let salle of data.salles" [value]="salle.codeSal">
+    <mat-select [(ngModel)]="occupancy.codeSal" [disabled]="true" required>
+      <mat-option *ngFor="let salle of data.salles" [value]="salle.codeSal" class="poppins-option">
         {{ salle.designation }} ({{ salle.codeSal }})
       </mat-option>
     </mat-select>
   </mat-form-field>
   <mat-form-field appearance="fill">
-    <mat-label>Date</mat-label>
+    <mat-label>DATE</mat-label>
     <input matInput [matDatepicker]="picker" [(ngModel)]="occupancy.date" required>
     <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
     <mat-datepicker #picker></mat-datepicker>
@@ -25,5 +25,5 @@
 </mat-dialog-content>
 <mat-dialog-actions>
   <button mat-button (click)="cancel()">CANCEL</button>
-  <button mat-button (click)="save()" [disabled]="!occupancy.codeProf || !occupancy.codeSal || !occupancy.date">ADD</button>
+  <button mat-button (click)="save()" [disabled]="!occupancy.date">UPDATE</button>
 </mat-dialog-actions>
