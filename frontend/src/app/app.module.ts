@@ -1,4 +1,3 @@
-// src/app/app.module.ts
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
@@ -18,6 +17,9 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatIconModule } from '@angular/material/icon';
 import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSelectModule } from '@angular/material/select'; 
+import { MatDatepickerModule } from '@angular/material/datepicker'; 
+import { MatNativeDateModule } from '@angular/material/core';
 import { FormsModule } from '@angular/forms';
 import { ProfAddDialogComponent } from './professors/prof-add-dialog/prof-add-dialog.component';
 import { ProfUpdateDialogComponent } from './professors/prof-update-dialog/prof-update-dialog.component';
@@ -26,6 +28,8 @@ import { RoomAddDialogComponent } from './rooms/room-add-dialog/room-add-dialog.
 import { OccupancyAddDialogComponent } from './occupancy/occupancy-add-dialog/occupancy-add-dialog.component';
 import { RoomUpdateDialogComponent } from './rooms/room-update-dialog/room-update-dialog.component';
 import { RoomDeleteDialogComponent } from './rooms/room-delete-dialog/room-delete-dialog.component';
+import { OccupancyUpdateDialogComponent } from './occupancy/occupancy-update-dialog/occupancy-update-dialog.component';
+import { OccupancyDeleteDialogComponent } from './occupancy/occupancy-delete-dialog/occupancy-delete-dialog.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +43,9 @@ import { RoomDeleteDialogComponent } from './rooms/room-delete-dialog/room-delet
     RoomAddDialogComponent,
     OccupancyAddDialogComponent,
     RoomUpdateDialogComponent,
-    RoomDeleteDialogComponent
+    RoomDeleteDialogComponent,
+    OccupancyUpdateDialogComponent,
+    OccupancyDeleteDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -54,6 +60,9 @@ import { RoomDeleteDialogComponent } from './rooms/room-delete-dialog/room-delet
     MatFormFieldModule,
     MatInputModule,
     MatPaginatorModule,
+    MatSelectModule, 
+    MatDatepickerModule, 
+    MatNativeDateModule, 
     FormsModule,
     RouterModule.forRoot([
       {

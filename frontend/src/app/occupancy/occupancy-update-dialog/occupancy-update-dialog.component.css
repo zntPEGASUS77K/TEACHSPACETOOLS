@@ -68,3 +68,7 @@ mat-form-field {
       transform: translateY(0);
     }
   }
+  
+  .poppins-option {
+    font-family: 'Poppins', sans-serif !important;
+  }

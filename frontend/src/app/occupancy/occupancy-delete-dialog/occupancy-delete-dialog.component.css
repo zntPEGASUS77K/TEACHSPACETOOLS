@@ -1,7 +1,7 @@
-mat-form-field {
-    width: 100%;
-    margin-bottom: 15px;
+mat-dialog-content {
     font-family: 'Poppins', sans-serif !important;
+    text-align: center;
+    padding: 20px;
   }
   
   h2[mat-dialog-title] {
@@ -17,7 +17,7 @@ mat-form-field {
   mat-dialog-container {
     border: 1px solid rgba(0, 154, 72, 0.69);
     border-radius: 15px;
-    box-shadow: 0 6px 12px rgba(0, 154, 72, 0.5);
+    box-shadow: 0px 6px 12px rgba(0, 154, 72, 0.5);
   }
   
   mat-dialog-actions {
@@ -50,21 +50,10 @@ mat-form-field {
   }
   
   button:last-child {
-    background-color: rgba(0, 57, 181, 0.7);
+    background-color: rgba(255, 0, 0, 0.7);
     color: white;
   }
   
   button:last-child:hover {
-    background-color: rgba(50, 165, 252, 0.7);
-  }
-  
-  @keyframes slideDown {
-    from {
-      opacity: 0;
-      transform: translateY(-50px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
+    background-color: rgba(255, 0, 0, 1);
   }
