@@ -45,10 +45,10 @@
         <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
         <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
       </table>
-      <div *ngIf="dataSource?.data?.length === 0" class="not-found">
-        404 NOT FOUND
+      <div *ngIf="notFound" class="not-found">
+        No professors found matching your search.
       </div>
-      <mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons></mat-paginator> <!-- Ajout ici -->
+      <mat-paginator [pageSizeOptions]="[5, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100]" showFirstLastButtons></mat-paginator>
     </mat-card-content>
   </mat-card>
 </div>

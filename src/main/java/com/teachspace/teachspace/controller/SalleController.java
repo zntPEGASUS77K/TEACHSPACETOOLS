@@ -10,6 +10,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/${api.version}/salles")
+@CrossOrigin(origins = "http://localhost:4200")
 @Tag(name = "Salle", description = "API to manage rooms")
 public class SalleController {
     private final SalleService salleService;

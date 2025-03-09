@@ -24,11 +24,11 @@ interface ProfDTO {
 })
 export class ProfessorsComponent implements OnInit {
   displayedColumns: string[] = ['codeProf', 'nom', 'prenom', 'grade', 'actions'];
-  dataSource = new MatTableDataSource<ProfDTO>([]); 
+  dataSource = new MatTableDataSource<ProfDTO>([]);
   searchQuery: string = '';
   notFound: boolean = false;
 
-  @ViewChild(MatPaginator) paginator!: MatPaginator; 
+  @ViewChild(MatPaginator) paginator!: MatPaginator;
 
   constructor(
     private http: HttpClient,
@@ -47,7 +47,7 @@ export class ProfessorsComponent implements OnInit {
   loadProfs(): void {
     this.http.get<ProfDTO[]>(`http://localhost:8085/api/${config.apiVersion}/profs`).subscribe({
       next: (data) => {
-        this.dataSource.data = data; 
+        this.dataSource.data = data;
         this.notFound = data.length === 0;
       },
       error: (err) => {

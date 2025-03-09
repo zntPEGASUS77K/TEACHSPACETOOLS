@@ -1,5 +1,6 @@
 package com.teachspace.teachspace.service;
 
+import com.teachspace.teachspace.entity.Occuper;
 import com.teachspace.teachspace.entity.Salle;
 import com.teachspace.teachspace.exception.ResourceNotFoundException;
 import com.teachspace.teachspace.model.SalleDTO;
@@ -7,6 +8,7 @@ import com.teachspace.teachspace.repository.SalleRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -21,6 +23,7 @@ public class SalleService {
 
     public List<SalleDTO> findAll() {
         return salleRepository.findAll().stream()
+                .sorted(Comparator.comparing(Salle::getCodeSal))
                 .map(this::toDTO)
                 .collect(Collectors.toList());
     }

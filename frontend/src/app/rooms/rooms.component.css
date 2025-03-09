@@ -55,3 +55,8 @@ table {
     font-size: 14px;
     color: #000000;
   }
+
+  mat-paginator {
+    font-family: 'Poppins', sans-serif !important;
+    margin-top: 25px;
+  }
