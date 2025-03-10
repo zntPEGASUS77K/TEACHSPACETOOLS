@@ -8,25 +8,25 @@ The application integrates with a **PostgreSQL** database and includes **Swagger
 
 ## ✨ FEATURES  
 
-✅ **Professor Management**: Create, update, delete, and retrieve professors 👨‍🏫  
-✅ **Room Management**: Handle room designations with CRUD operations 🏫  
-✅ **Occupancy Scheduling**: Assign rooms to professors on specific dates 📅  
-✅ **Angular Frontend**: A modern and interactive user interface 🌍
-✅ **API Documentation**: Interactive Swagger UI 📜  
-✅ **Error Handling**: Comprehensive exception handling and database constraints 🚦  
+✅ **Professor Management:** Create, update, delete, and retrieve professors 👨‍🏫  
+✅ **Room Management:** Handle room designations with CRUD operations 🏫  
+✅ **Occupancy Scheduling:** Assign rooms to professors on specific dates 📅  
+✅ **Angular Frontend:** A modern and interactive user interface 🌍  
+✅ **API Documentation:** Interactive Swagger UI 📜  
+✅ **Error Handling:** Comprehensive exception handling and database constraints 🚦  
 
 ---
 
 ## 🛠️ TECH STACK  
 
-🔹 **Backend**: Spring Boot
-🔹 **Frontend**: Angular
-🔹 **Language**: Java 21 ☕ & TypeScript
-🔹 **Database**: PostgreSQL 🐘  
-🔹 **API Documentation**: Springdoc OpenAPI (Swagger UI) 📄  
-🔹 **Build Tool**: Gradle 📦  
-🔹 **Containerization**: Docker Compose for PostgreSQL 🐳  
-🔹 **Testing**: JUnit 5 with MockMvc ✅  
+🔹 **Backend:** Spring Boot  
+🔹 **Frontend:** Angular  
+🔹 **Language:** Java 21 ☕ & TypeScript  
+🔹 **Database:** PostgreSQL 🐘  
+🔹 **API Documentation:** Springdoc OpenAPI (Swagger UI) 📄  
+🔹 **Build Tool:** Gradle 📦  
+🔹 **Containerization:** Docker Compose for PostgreSQL 🐳  
+🔹 **Testing:** JUnit 5 with MockMvc ✅    
 
 ---
 
@@ -34,8 +34,8 @@ The application integrates with a **PostgreSQL** database and includes **Swagger
 
 🔹 **Java 21** installed 📌  
 🔹 **Gradle** installed 🛠️  
-🔹 **PostgreSQL** configured 🐘
-🔹 **Angular CLI** installed (npm install -g @angular/cli) 🅰️
+🔹 **PostgreSQL** configured 🐘  
+🔹 **Angular CLI** installed (npm install -g @angular/cli) 🅰️  
 🔹 **Docker** (optional, for running the database via Docker Compose) 🐳  
 🔹 **Git** installed to clone the project 🖥️  
 
